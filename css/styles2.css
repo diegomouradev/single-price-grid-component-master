@@ -80,7 +80,7 @@ dt{
 .main-wrap{
     display: flex;
     flex-wrap: wrap;
-    max-width: 640px;
+    max-width: 644px;
     margin: auto 30px;
     border-radius: 10px;
     overflow: hidden;
@@ -90,7 +90,7 @@ dt{
 /* FIRST BLOCK */
 
 .join-us{
-    flex: 1 644px;
+    flex: 1 0 644px;
     background-color: #fff;
     padding: 40px 40px;
 }
@@ -118,10 +118,8 @@ dt{
 /* SECOND BLOCK */
 
 .subscription{
-    flex: 1;
+    flex: 1 0 auto;
     background-color: hsl(179, 62%, 43%);
-    /* border-bottom: 1px solid hsl(179, 62%, 43%); */
-    /* border-radius: 0 0 0 5px; */
     padding: 40px 40px;
 }
 
@@ -169,7 +167,7 @@ button:focus {
 /* THIRD BLOCK */
 
 .why-us{
-    flex: 1;
+    flex: 1 0 auto;
     background-color: #4ABEBD;
     padding: 40px 40px;
 }
@@ -184,3 +182,49 @@ footer{
     margin-top: 30px;
     padding-bottom: 10px;
 }
+
+@media screen and (max-width:701px){
+
+    body{
+        height: 100%;
+    }
+    .main-wrap{
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 30px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .join-us{
+        flex: 1 1 auto;
+        background-color: #fff;
+        padding: 40px 40px;
+    }
+    .subscription{
+        flex: 1 1 auto;
+        background-color: hsl(179, 62%, 43%);
+        padding: 40px 40px;
+    }
+    .why-us{
+        flex: 1 1 auto;
+        background-color: #4ABEBD;
+        padding: 40px 40px;
+    }
+    button{
+        margin: 30px auto 0;
+        padding: 20px 80px;
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    .content{
+        display: inline;
+        color: #AAADB2;
+        font-family: sans-serif;
+        line-height: 25px;
+    }
+    li{
+        margin-bottom: 10px;
+    }
+} 
