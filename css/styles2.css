@@ -76,6 +76,10 @@ dt{
     color: #fff;
     font-family: sans-serif;
 }
+dd{
+    color: #fff;
+    font-family: sans-serif;
+}
 
 .main-wrap{
     display: flex;
